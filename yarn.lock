@@ -1817,6 +1817,11 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.6.tgz#df929d1bb2eee5afdda598a41930fe50b43eaa6a"
   integrity sha512-Exw4yUWMBXM3X+8oqzJNRqZSwUAaS4+7NdvHqQuFi/d+synz++xmX3QIf+BFqneW8N31R8Ky+sikfZUXq07ggQ==
 
+"@types/node@>=8.0.0 <15":
+  version "14.17.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.17.0.tgz#3ba770047723b3eeb8dc9fca02cce8a7fb6378da"
+  integrity sha512-w8VZUN/f7SSbvVReb9SWp6cJFevxb4/nkG65yLAya//98WgocKm5PLDAtSs5CtJJJM+kHmJjO/6mmYW4MHShZA==
+
 "@types/node@^10.1.0":
   version "10.17.58"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.58.tgz#10682f6016fd866725c36d22ce6bbbd029bf4545"
@@ -1960,6 +1965,11 @@ abort-controller@3.0.0, abort-controller@^3.0.0:
   dependencies:
     event-target-shim "^5.0.0"
 
+abortcontroller-polyfill@^1.4.0:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/abortcontroller-polyfill/-/abortcontroller-polyfill-1.7.3.tgz#1b5b487bd6436b5b764fd52a612509702c3144b5"
+  integrity sha512-zetDJxd89y3X99Kvo4qFx8GKlt6GsvN3UcRZHwU6iFA/0KiOmhkTVhe8oRoTBiTVPZu09x3vCra47+w8Yz1+2Q==
+
 abstract-leveldown@^6.2.1:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/abstract-leveldown/-/abstract-leveldown-6.3.0.tgz#d25221d1e6612f820c35963ba4bd739928f6026a"
@@ -2026,6 +2036,17 @@ aes-js@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/aes-js/-/aes-js-3.0.0.tgz#e21df10ad6c2053295bcbb8dab40b09dbea87e4d"
   integrity sha1-4h3xCtbCBTKVvLuNq0Cwnb6ofk0=
+
+airtable@^0.11.1:
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/airtable/-/airtable-0.11.1.tgz#2fda51da04f5e4be7092351ea7be3cfdcf308347"
+  integrity sha512-33zBuUDhLl+FWWAFxFjS1a+vJr/b+UK//EV943nuiimChWph6YykQjYPmu/GucQ30g7mgaqq+98uPD4rfDHOgg==
+  dependencies:
+    "@types/node" ">=8.0.0 <15"
+    abort-controller "^3.0.0"
+    abortcontroller-polyfill "^1.4.0"
+    lodash "^4.17.21"
+    node-fetch "^2.6.1"
 
 ajv@^6.12.3:
   version "6.12.6"
@@ -6813,7 +6834,7 @@ lodash.zipwith@^4.2.0:
   resolved "https://registry.yarnpkg.com/lodash.zipwith/-/lodash.zipwith-4.2.0.tgz#afacf03fd2f384af29e263c3c6bda3b80e3f51fd"
   integrity sha1-r6zwP9LzhK8p4mPDxr2juA4/Uf0=
 
-lodash@4.17.21, lodash@^4.1.0, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.4, lodash@^4.2.1:
+lodash@4.17.21, lodash@^4.1.0, lodash@^4.15.0, lodash@^4.17.11, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.2.1:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==

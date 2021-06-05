@@ -6,7 +6,7 @@ const { getAllDistros, updateWithAddress } = require('../utils/airtable');
 const COMPANY_WALLET = process.env.COMPANY_WALLET;
 const VESTING_FACTORY_ADDRESS = process.env.VESTING_FACTORY_ADDRESS;
 
-const STAGE = 'Production';
+const STAGE = 'Staging';
 
 module.exports = async function (cb) {
   try {
@@ -27,7 +27,7 @@ module.exports = async function (cb) {
       VESTING_FACTORY_ADDRESS
     );
 
-    const from = (await web3.eth.getAccounts())[1];
+    const from = (await web3.eth.getAccounts())[0];
 
     console.log({ from });
 
@@ -44,7 +44,7 @@ module.exports = async function (cb) {
       vestingEndDate,
       id,
       vestingContractAddress,
-    } of distributions) {
+    } of distributions) { 
       const correctVestingAddress = web3.utils.toChecksumAddress(
         await factoryInstance.methods
           .vestingAddress(walletAddress.trim())

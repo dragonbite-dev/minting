@@ -20,7 +20,7 @@ const base = new Airtable().base(AIRTABLE_BASE);
 
 const getAllDistros = async (stage) => {
   const raw = await base(`TGE Distribution (${stage})`)
-    .select({ view: 'Filtered (removes NA)' })
+    .select()
     .all();
 
   const result = raw.map((item) => {
